@@ -1,0 +1,69 @@
+body, main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cover {
+    background-image: linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045);
+    height: 75vh;
+}
+
+h1, h2 {
+  font-size: 6vw;
+}
+
+h1 {
+    position: relative;
+    top: 30vh;
+    color: #ecf0f1;
+}
+
+h2 {
+  margin: 60vh 0;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+
+.borders {
+  opacity: 1;
+  margin: 35vh 25vw 0 25vw;
+  border-bottom: 5vw solid #9c88ff;
+  border-top: 5vw solid #9c88ff;
+  transition: border-bottom 0.6s ease-in, border-top 0.6s ease-in;
+}
+
+.slide {
+  animation: slide-in 1s ease-in;
+}
+
+.drop-shadow {
+  filter: drop-shadow(40px -30px 2px #DFDFDF);
+  transition: all 0.7s;
+}
+
+.skew {
+  transform: skew(-40deg);
+  opacity: 1;
+  transition: all 1s;
+}
+
+@keyframes slide-in {
+  0% { 
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+ 
